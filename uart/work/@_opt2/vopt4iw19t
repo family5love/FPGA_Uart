@@ -1,0 +1,233 @@
+m255
+K3
+13
+cModel Technology
+Z0 dd:\Xilinx\14.7\ISE_DS\ISE
+vADDMACC_MACRO
+Im3eG_R@HC=[RG?Zo3e8320
+VQzjYO18i6PJlf]V]YK]E23
+Z1 dd:\Xilinx\14.7\ISE_DS\ISE
+Z2 w1381681047
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\ADDMACC_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\ADDMACC_MACRO.v
+L0 22
+Z3 OL;L;10.1c;51
+r1
+31
+Z4 !s108 1556506733.502000
+Z5 !s107 D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\MULT_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\MACC_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\FIFO_SYNC_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\FIFO_DUALCLOCK_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\EQ_COMPARE_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\COUNTER_TC_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\COUNTER_LOAD_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_TDP_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_SINGLE_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_SDP_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\ADDSUB_MACRO.v|D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\ADDMACC_MACRO.v|
+Z6 !s90 -source|-novopt|-work|unimacro_ver|-f|D:\Xilinx\Xilinx_lib/unimacro_ver/.cxl.verilog.unimacro.unimacro_ver.nt64.cmf|
+Z7 o-source -work unimacro_ver -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@a@d@d@m@a@c@c_@m@a@c@r@o
+!i10b 1
+!s100 IhE1MgNXaId5=;b?6fk3Y0
+!s85 0
+vADDSUB_MACRO
+IUGXZhInLNN>N]oAXVUBgD1
+VVT=Ighn]ITi9mScj:Y5^E2
+R1
+R2
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\ADDSUB_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\ADDSUB_MACRO.v
+L0 22
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@a@d@d@s@u@b_@m@a@c@r@o
+!i10b 1
+!s100 Pkl4S:W_5Hlh0WM_<oMV;1
+!s85 0
+vBRAM_SDP_MACRO
+IUOkFVn0eZ25=YDET7KPZj0
+VK6nWhUV8]^k_iIG^<5bLO0
+R1
+R2
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_SDP_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_SDP_MACRO.v
+L0 31
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@b@r@a@m_@s@d@p_@m@a@c@r@o
+!i10b 1
+!s100 A9NMG]7ebNbo9afA7?HX80
+!s85 0
+vBRAM_SINGLE_MACRO
+IcB>zaoTT[RLfCFi5?HkcQ1
+VNOdJdkSTo=<5nK1FRAPC43
+R1
+R2
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_SINGLE_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_SINGLE_MACRO.v
+L0 28
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@b@r@a@m_@s@i@n@g@l@e_@m@a@c@r@o
+!i10b 1
+!s100 PanTb4zbXl9mYW=gV58k<0
+!s85 0
+vBRAM_TDP_MACRO
+IP<ejAA=2KDkEf7OOi`E_>1
+VUK`W3@i<XVeJbbf;SbcnD1
+R1
+R2
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_TDP_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\BRAM_TDP_MACRO.v
+L0 28
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@b@r@a@m_@t@d@p_@m@a@c@r@o
+!i10b 1
+!s100 ^i`ROKkfLBDlI77MFWS]G2
+!s85 0
+vCOUNTER_LOAD_MACRO
+INH6dH=;N0DzOTTzDEeL[T2
+VDn4f5=SzVK=S`ezQaVo1X2
+R1
+R2
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\COUNTER_LOAD_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\COUNTER_LOAD_MACRO.v
+L0 22
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@c@o@u@n@t@e@r_@l@o@a@d_@m@a@c@r@o
+!i10b 1
+!s100 >k@E;YoO];[7^zJURWXQm2
+!s85 0
+vCOUNTER_TC_MACRO
+In`DQ?A538zLHZZ;2Wo4jL2
+VRf?hZ>99_ae<6@YNT3aNN1
+R1
+R2
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\COUNTER_TC_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\COUNTER_TC_MACRO.v
+L0 23
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@c@o@u@n@t@e@r_@t@c_@m@a@c@r@o
+!i10b 1
+!s100 X1Ha_n?LC[^27<fhiJ`me3
+!s85 0
+vEQ_COMPARE_MACRO
+I7YcSHb<ABo19Zm>k4bW0E3
+VHRl[DhMGn3;MnzQ<`FBm51
+R1
+Z8 w1381681048
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\EQ_COMPARE_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\EQ_COMPARE_MACRO.v
+L0 22
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@e@q_@c@o@m@p@a@r@e_@m@a@c@r@o
+!i10b 1
+!s100 SMbLI8AV5PLR^6d]Z3:;43
+!s85 0
+vFIFO_DUALCLOCK_MACRO
+In64F`<Q7<h<`IY4Ug7=n[3
+VPzc0ZlbeT<L264=^4;WDo3
+R1
+R8
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\FIFO_DUALCLOCK_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\FIFO_DUALCLOCK_MACRO.v
+L0 23
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@f@i@f@o_@d@u@a@l@c@l@o@c@k_@m@a@c@r@o
+!i10b 1
+!s100 d[EHb>gnmC^A>mI9?bcz`1
+!s85 0
+vFIFO_SYNC_MACRO
+ISH_[2X6Q2CEQZGYF758eW2
+Vf1ZA8Lc^;<>3CH^___=zh2
+R1
+R8
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\FIFO_SYNC_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\FIFO_SYNC_MACRO.v
+L0 23
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@f@i@f@o_@s@y@n@c_@m@a@c@r@o
+!i10b 1
+!s100 Y2HTm;;To=;[j0W4gA:kS2
+!s85 0
+vMACC_MACRO
+I?j_TTB@=`:B:dc2[V2GmN0
+V6ad0J6ah[4nR<=k=:V5Rj1
+R1
+R8
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\MACC_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\MACC_MACRO.v
+L0 22
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@m@a@c@c_@m@a@c@r@o
+!i10b 1
+!s100 nSSQ4@S[Q?fnL^@8Phkcz0
+!s85 0
+vMULT_MACRO
+I32@V>_?DZE[?1lZU33db21
+V5NQgTMmezKzNhbJTm7QHk0
+R1
+R8
+8D:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\MULT_MACRO.v
+FD:\Xilinx\14.7\ISE_DS\ISE\verilog\src\unimacro\MULT_MACRO.v
+L0 23
+R3
+r1
+31
+R4
+R5
+R6
+R7
+n@m@u@l@t_@m@a@c@r@o
+!i10b 1
+!s100 Dl1HQ9:SGBU09IR;05@kO3
+!s85 0

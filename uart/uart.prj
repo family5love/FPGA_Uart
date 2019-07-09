@@ -1,0 +1,3 @@
+verilog work "uart_txd.v"
+verilog work "uart_rxd.v"
+verilog work "uart.v"

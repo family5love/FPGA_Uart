@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\fengtao\study\ISE\uart\impact.xsl
+OUTFILE=D:\fengtao\study\ISE\uart\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\fengtao\study\ISE\uart
+LICENSE=iMPACT
+USER_INFO=iMPACT

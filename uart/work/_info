@@ -1,0 +1,121 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\fengtao\study\ISE\uart
+T_opt
+VglA:mH__XS6_D@`^0?@RJ2
+04 12 4 work uart_txd_vrf fast 0
+Z1 04 4 4 work glbl fast 0
+=1-d0c63710052c-5ccf88ea-e0-1fa8
+Z2 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z3 OL;O;10.1c;51
+T_opt1
+VHM6HPVAezAVC>ZK4fGg=J3
+Z4 04 12 4 work uart_rxd_vrf fast 0
+R1
+=1-d0c63710052c-5cc7adf2-3e0-2cd0
+R2
+n@_opt1
+R3
+Z5 dD:\fengtao\study\ISE\uart
+T_opt2
+VXZnN<;9Ii95Cc72Zgz:Bl0
+R4
+R1
+=1-d0c63710052c-5cc7e82c-3d-388
+R2
+n@_opt2
+R3
+R5
+vglbl
+I4b9nnmKVNfb:jWaaBE8Cg3
+VM[9mS]S:KA1i4VeCMX35[3
+R5
+w1381681120
+8D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+FD:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z6 OL;L;10.1c;51
+r1
+31
+Z7 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 TFB84>>W1Fn6fP`iF=8CU3
+!s90 -reportprogress|300|D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+!i10b 1
+!s85 0
+!s108 1557104874.037000
+!s107 D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+vuart_rxd
+IMGR?>j?kbNanjEG>DAa9S1
+Vi9nKUd[zDB0Y[fZzC?1X`0
+R5
+w1556588720
+8uart_rxd.v
+Fuart_rxd.v
+L0 21
+R6
+r1
+31
+R7
+!s100 IXhPo31H>Ob;K0Kz:;dN03
+!s90 -reportprogress|300|uart_rxd.v|
+!s108 1557104352.070000
+!s107 uart_rxd.v|
+!i10b 1
+!s85 0
+vuart_rxd_vrf
+IZaIjN7;cfbJRGIIWzhRif1
+V6AhakYSHX>UfiD8g^Lz?g2
+R5
+w1556589884
+8uart_rxd_vrf.v
+Fuart_rxd_vrf.v
+L0 25
+R6
+r1
+31
+R7
+!s100 8;c9?lo^aQT9nT:J7]4^>3
+!s90 -reportprogress|300|uart_rxd_vrf.v|
+!s108 1557104352.126000
+!s107 uart_rxd_vrf.v|
+!i10b 1
+!s85 0
+vuart_txd
+ITLh?ag@S?3EmI<=B^?^B42
+VC9bPNgzhS0igad2UR<=F22
+R5
+w1557104745
+8uart_txd.v
+Fuart_txd.v
+L0 2
+R6
+r1
+31
+R7
+!s90 -reportprogress|300|uart_txd.v|
+!s100 fOP<b??9;J[zdzAM`lRCD2
+!s108 1557104873.936000
+!s107 uart_txd.v|
+!i10b 1
+!s85 0
+vuart_txd_vrf
+ISm5N9c`eVUd:cNP64Ke@>1
+V^EaUdfabnA2_[c8^@`MN61
+R5
+w1556526667
+8uart_txd_vrf.v
+Fuart_txd_vrf.v
+L0 25
+R6
+r1
+31
+R7
+!s100 8j:d<aQ^z2I3@@__MAPOD0
+!s90 -reportprogress|300|uart_txd_vrf.v|
+!s108 1557104873.988000
+!s107 uart_txd_vrf.v|
+!i10b 1
+!s85 0

@@ -1,0 +1,42 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 06 17:44:23 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "clk50M" LOCATE = SITE "T8" LEVEL 1;
+COMP "rxd" LOCATE = SITE "C11" LEVEL 1;
+COMP "led0" LOCATE = SITE "P4" LEVEL 1;
+COMP "txd" LOCATE = SITE "D12" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "led0" BEL "n_0" BEL "n_1" BEL "n_2" BEL "n_3" BEL
+        "n_4" BEL "n_5" BEL "n_6" BEL "n_7" BEL "n_8" BEL "n_9" BEL "n_10" BEL
+        "n_11" BEL "n_12" BEL "n_13" BEL "n_14" BEL "n_15" BEL "n_16" BEL
+        "n_17" BEL "n_18" BEL "n_19" BEL "n_20" BEL "n_21" BEL "n_22" BEL
+        "n_23" BEL "n_24" BEL "u1_uart_rxd/cnt_15" BEL "u1_uart_rxd/cnt_14"
+        BEL "u1_uart_rxd/cnt_13" BEL "u1_uart_rxd/cnt_12" BEL
+        "u1_uart_rxd/cnt_11" BEL "u1_uart_rxd/cnt_10" BEL "u1_uart_rxd/cnt_9"
+        BEL "u1_uart_rxd/cnt_8" BEL "u1_uart_rxd/cnt_7" BEL
+        "u1_uart_rxd/cnt_6" BEL "u1_uart_rxd/cnt_5" BEL "u1_uart_rxd/cnt_4"
+        BEL "u1_uart_rxd/cnt_3" BEL "u1_uart_rxd/cnt_2" BEL
+        "u1_uart_rxd/cnt_1" BEL "u1_uart_rxd/cnt_0" BEL
+        "u1_uart_rxd/status_FSM_FFd1" BEL "u1_uart_rxd/rxd_data_7" BEL
+        "u1_uart_rxd/rxd_data_0" BEL "u1_uart_rxd/rxd_data_1" BEL
+        "u1_uart_rxd/rxd_data_2" BEL "u1_uart_rxd/rxd_data_3" BEL
+        "u1_uart_rxd/rxd_data_4" BEL "u1_uart_rxd/rxd_data_5" BEL
+        "u1_uart_rxd/rxd_data_6" BEL "u1_uart_rxd/p_rxd_pin" BEL
+        "u1_uart_txd/cnt_15" BEL "u1_uart_txd/cnt_14" BEL "u1_uart_txd/cnt_13"
+        BEL "u1_uart_txd/cnt_12" BEL "u1_uart_txd/cnt_11" BEL
+        "u1_uart_txd/cnt_10" BEL "u1_uart_txd/cnt_9" BEL "u1_uart_txd/cnt_8"
+        BEL "u1_uart_txd/cnt_7" BEL "u1_uart_txd/cnt_6" BEL
+        "u1_uart_txd/cnt_5" BEL "u1_uart_txd/cnt_4" BEL "u1_uart_txd/cnt_3"
+        BEL "u1_uart_txd/cnt_2" BEL "u1_uart_txd/cnt_1" BEL
+        "u1_uart_txd/cnt_0" BEL "u1_uart_txd/status_FSM_FFd1" BEL
+        "u1_uart_txd/p_txd_cmd" BEL "u1_uart_txd/txd_pin" BEL
+        "u1_uart_txd/p_txd_data_7" BEL "u1_uart_txd/p_txd_data_6" BEL
+        "u1_uart_txd/p_txd_data_5" BEL "u1_uart_txd/p_txd_data_4" BEL
+        "u1_uart_txd/p_txd_data_3" BEL "u1_uart_txd/p_txd_data_2" BEL
+        "u1_uart_txd/p_txd_data_1" BEL "u1_uart_txd/p_txd_data_0" BEL
+        "clk50M_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+
