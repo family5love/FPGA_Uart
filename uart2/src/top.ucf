@@ -1,0 +1,15 @@
+##
+NET sclk 				LOC = T8 | TNM_NET = sys_clk_pin | IOSTANDARD = "LVCMOS33";
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000kHz;
+##
+
+##
+NET s_rst_n  			LOC = L3 | IOSTANDARD = "LVCMOS33";
+##
+
+NET led0				LOC = P4 | IOSTANDARD = "LVCMOS33"; //led0
+NET rs232_tx			LOC = D12 | IOSTANDARD = "LVCMOS33";
+NET rs232_rx			LOC = C11 | IOSTANDARD = "LVCMOS33";
+#NET led1			LOC = N5 | IOSTANDARD = "LVCMOS33";
+#NET led2			LOC = P5 | IOSTANDARD = "LVCMOS33";
+#NET led3			LOC = M6 | IOSTANDARD = "LVCMOS33";

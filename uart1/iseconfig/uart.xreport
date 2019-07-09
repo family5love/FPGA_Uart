@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-05-06T15:57:01</DateModified>
+  <DateModified>2019-07-09T15:27:52</DateModified>
   <ModuleName>uart</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/fengtao/study/ISE/uart/iseconfig/uart.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/fengtao/study/ISE/uart\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/fengtao/Project/Git/FPGA_Uart/uart1/iseconfig/uart.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/fengtao/Project/Git/FPGA_Uart/uart1\</ImplementationReportsDirectory>
   <DateInitialized>2019-04-29T11:19:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

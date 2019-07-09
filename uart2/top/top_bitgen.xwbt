@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\fengtao\Project\Git\FPGA_Uart\uart2\top\top.ncd
+OUTFILE=D:\fengtao\Project\Git\FPGA_Uart\uart2\top\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2ftg256
+WORKINGDIR=D:\fengtao\Project\Git\FPGA_Uart\uart2\top
+LICENSE=WebPack
+USER_INFO=__0_0_0

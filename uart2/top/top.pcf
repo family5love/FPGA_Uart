@@ -1,0 +1,53 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jul 09 16:14:50 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led0" LOCATE = SITE "P4" LEVEL 1;
+COMP "sclk" LOCATE = SITE "T8" LEVEL 1;
+COMP "rs232_rx" LOCATE = SITE "C11" LEVEL 1;
+COMP "rs232_tx" LOCATE = SITE "D12" LEVEL 1;
+COMP "s_rst_n" LOCATE = SITE "L3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "_i000001/num_0" BEL "_i000001/num_1" BEL
+        "_i000001/num_2" BEL "_i000001/num_3" BEL "_i000001/num_4" BEL
+        "_i000001/num_5" BEL "_i000001/num_6" BEL "_i000001/num_7" BEL
+        "_i000001/num_8" BEL "_i000001/num_9" BEL "_i000001/num_10" BEL
+        "_i000001/num_11" BEL "_i000001/num_12" BEL "_i000001/num_13" BEL
+        "_i000001/num_14" BEL "_i000001/num_15" BEL "_i000001/num_16" BEL
+        "_i000001/num_17" BEL "_i000001/num_18" BEL "_i000001/num_19" BEL
+        "_i000001/num_20" BEL "_i000001/num_21" BEL "_i000001/num_22" BEL
+        "_i000001/num_23" BEL "_i000001/num_24" BEL "_i000001/num_25" BEL
+        "inst_uart_rx/bit_cnt_3" BEL "inst_uart_rx/bit_cnt_2" BEL
+        "inst_uart_rx/bit_cnt_1" BEL "inst_uart_rx/bit_cnt_0" BEL
+        "inst_uart_rx/baud_cnt_13" BEL "inst_uart_rx/baud_cnt_12" BEL
+        "inst_uart_rx/baud_cnt_11" BEL "inst_uart_rx/baud_cnt_10" BEL
+        "inst_uart_rx/baud_cnt_9" BEL "inst_uart_rx/baud_cnt_8" BEL
+        "inst_uart_rx/baud_cnt_7" BEL "inst_uart_rx/baud_cnt_6" BEL
+        "inst_uart_rx/baud_cnt_5" BEL "inst_uart_rx/baud_cnt_4" BEL
+        "inst_uart_rx/baud_cnt_3" BEL "inst_uart_rx/baud_cnt_2" BEL
+        "inst_uart_rx/baud_cnt_1" BEL "inst_uart_rx/baud_cnt_0" BEL
+        "inst_uart_rx/rx_data_7" BEL "inst_uart_rx/rx_data_6" BEL
+        "inst_uart_rx/rx_data_5" BEL "inst_uart_rx/rx_data_4" BEL
+        "inst_uart_rx/rx_data_3" BEL "inst_uart_rx/rx_data_2" BEL
+        "inst_uart_rx/rx_data_1" BEL "inst_uart_rx/rx_data_0" BEL
+        "inst_uart_rx/rx_r3" BEL "inst_uart_rx/po_flag" BEL
+        "inst_uart_rx/bit_flag" BEL "inst_uart_tx/bit_cnt_3" BEL
+        "inst_uart_tx/bit_cnt_2" BEL "inst_uart_tx/bit_cnt_1" BEL
+        "inst_uart_tx/bit_cnt_0" BEL "inst_uart_tx/rs232_tx" BEL
+        "inst_uart_tx/baud_cnt_12" BEL "inst_uart_tx/baud_cnt_11" BEL
+        "inst_uart_tx/baud_cnt_10" BEL "inst_uart_tx/baud_cnt_9" BEL
+        "inst_uart_tx/baud_cnt_8" BEL "inst_uart_tx/baud_cnt_7" BEL
+        "inst_uart_tx/baud_cnt_6" BEL "inst_uart_tx/baud_cnt_5" BEL
+        "inst_uart_tx/baud_cnt_4" BEL "inst_uart_tx/baud_cnt_3" BEL
+        "inst_uart_tx/baud_cnt_2" BEL "inst_uart_tx/baud_cnt_1" BEL
+        "inst_uart_tx/baud_cnt_0" BEL "inst_uart_tx/bit_flag" BEL
+        "inst_uart_tx/tx_data_r_7" BEL "inst_uart_tx/tx_data_r_6" BEL
+        "inst_uart_tx/tx_data_r_5" BEL "inst_uart_tx/tx_data_r_4" BEL
+        "inst_uart_tx/tx_data_r_3" BEL "inst_uart_tx/tx_data_r_2" BEL
+        "inst_uart_tx/tx_data_r_1" BEL "inst_uart_tx/tx_data_r_0" BEL
+        "inst_uart_tx/tx_flag" BEL "inst_uart_rx/rx_flag" BEL
+        "sclk_BUFGP/BUFG" BEL "inst_uart_rx/Mshreg_rx_r2" BEL
+        "inst_uart_rx/rx_r2";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+
