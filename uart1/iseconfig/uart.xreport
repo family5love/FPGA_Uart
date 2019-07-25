@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-07-09T15:27:52</DateModified>
+  <DateModified>2019-07-12T19:23:02</DateModified>
   <ModuleName>uart</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/fengtao/Project/Git/FPGA_Uart/uart1/iseconfig/uart.xreport</SavedFilePath>

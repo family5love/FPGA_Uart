@@ -8,5 +8,17 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/fengtao/Project/Git/FPGA_Uart/uart2/src/timer_1s.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/fengtao/Project/Git/FPGA_Uart/uart2/src/uart_rx.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/fengtao/Project/Git/FPGA_Uart/uart2/src/uart_tx.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/fengtao/Project/Git/FPGA_Uart/uart2/top/top.v&quot; into library work</arg>
+</msg>
+
 </messages>
 

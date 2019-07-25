@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\fengtao\Project\Git\FPGA_Uart\uart2\top
+T_opt
+V?0<ZJCOFS7K`:Fj7jY3N93
+04 12 4 work vrf_timer_1s fast 0
+04 4 4 work glbl fast 0
+=1-d0c63710052c-5d24556d-188-387c
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+OL;O;10.1c;51
+vglbl
+I4b9nnmKVNfb:jWaaBE8Cg3
+VM[9mS]S:KA1i4VeCMX35[3
+Z1 dD:\fengtao\Project\Git\FPGA_Uart\uart2\top
+Z2 w1381681120
+8D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+FD:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.1c;51
+r1
+31
+Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 TFB84>>W1Fn6fP`iF=8CU3
+!s85 0
+!s108 1562662253.158000
+!s107 D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v|
+vtimer_1s
+I`A:>P1M4i9c3WTD<n8]e00
+VD2>K9YAOe@5f;S]ZJVNkX3
+R1
+w1562638662
+8../src/timer_1s.v
+F../src/timer_1s.v
+L0 21
+R3
+r1
+31
+R4
+!s100 @B7^m5n>]DEUd1h:1b1]h2
+!s108 1562662253.065000
+!s107 ../src/timer_1s.v|
+!s90 -reportprogress|300|../src/timer_1s.v|
+!i10b 1
+!s85 0
+vvrf_timer_1s
+IgKTU5>AKbfF2h=SV1@VzZ3
+VR=ZjYP92YFiFG_7[2NSGf2
+R1
+w1562640269
+8../sim/vrf_timer_1s.v
+F../sim/vrf_timer_1s.v
+L0 25
+R3
+r1
+31
+R4
+!s100 Q^eZWzGz41Y9;=4RiK9iY1
+!s108 1562662253.111000
+!s107 ../sim/vrf_timer_1s.v|
+!s90 -reportprogress|300|../sim/vrf_timer_1s.v|
+!i10b 1
+!s85 0
