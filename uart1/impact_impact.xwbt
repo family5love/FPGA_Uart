@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=D:\fengtao\study\ISE\uart\impact.xsl
-OUTFILE=D:\fengtao\study\ISE\uart\impact.xsl
+INFILE=D:\fengtao\Project\Git\FPGA_Uart\uart1\impact.xsl
+OUTFILE=D:\fengtao\Project\Git\FPGA_Uart\uart1\impact.xsl
 FAMILY=Single
 PART=Single
-WORKINGDIR=D:\fengtao\study\ISE\uart
+WORKINGDIR=D:\fengtao\Project\Git\FPGA_Uart\uart1
 LICENSE=iMPACT
 USER_INFO=iMPACT

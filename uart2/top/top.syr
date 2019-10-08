@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: top.prj
 
@@ -99,12 +99,17 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Analyzing Verilog file "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\ipcore_dir\pll_ip.v" into library work
+Parsing module <pll_ip>.
 Analyzing Verilog file "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_tx.v" into library work
 Parsing module <uart_tx>.
 Analyzing Verilog file "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_rx.v" into library work
@@ -120,18 +125,26 @@ Parsing module <top>.
 
 Elaborating module <top>.
 
+Elaborating module <pll_ip>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\ipcore_dir\pll_ip.v" Line 132: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\top.v" Line 44: Assignment to pll_locked ignored, since the identifier is never used
+
 Elaborating module <uart_rx>.
-WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_rx.v" Line 56: Result of 15-bit expression is truncated to fit in 14-bit target.
-WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_rx.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_rx.v" Line 58: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_rx.v" Line 78: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <uart_tx>.
-WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_tx.v" Line 70: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_tx.v" Line 90: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:604 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\top.v" Line 59: Module instantiation should have an instance name
+WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_tx.v" Line 72: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_tx.v" Line 92: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <timer_1s>.
-WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\timer_1s.v" Line 36: Result of 27-bit expression is truncated to fit in 26-bit target.
-WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\timer_1s.v" Line 39: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\timer_1s.v" Line 42: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -139,13 +152,20 @@ WARNING:HDLCompiler:413 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\timer_1s.v
 
 Synthesizing Unit <top>.
     Related source file is "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\top.v".
+INFO:Xst:3210 - "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\top.v" line 39: Output port <LOCKED> of the instance <pll_ip_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <top> synthesized.
 
+Synthesizing Unit <pll_ip>.
+    Related source file is "D:\fengtao\Project\Git\FPGA_Uart\uart2\top\ipcore_dir\pll_ip.v".
+    Summary:
+	no macro.
+Unit <pll_ip> synthesized.
+
 Synthesizing Unit <uart_rx>.
     Related source file is "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_rx.v".
-    Found 14-bit register for signal <baud_cnt>.
+    Found 16-bit register for signal <baud_cnt>.
     Found 4-bit register for signal <bit_cnt>.
     Found 8-bit register for signal <rx_data>.
     Found 1-bit register for signal <rx_flag>.
@@ -154,12 +174,12 @@ Synthesizing Unit <uart_rx>.
     Found 1-bit register for signal <rx_r2>.
     Found 1-bit register for signal <rx_r3>.
     Found 1-bit register for signal <rx_r1>.
-    Found 14-bit adder for signal <baud_cnt[13]_GND_2_o_add_4_OUT> created at line 56.
-    Found 4-bit adder for signal <bit_cnt[3]_GND_2_o_add_12_OUT> created at line 76.
-    Found 4-bit comparator lessequal for signal <n0025> created at line 84
+    Found 16-bit adder for signal <baud_cnt[15]_GND_6_o_add_4_OUT> created at line 58.
+    Found 4-bit adder for signal <bit_cnt[3]_GND_6_o_add_12_OUT> created at line 78.
+    Found 4-bit comparator lessequal for signal <n0025> created at line 86
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  32 D-type flip-flop(s).
+	inferred  34 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 	inferred   3 Multiplexer(s).
 Unit <uart_rx> synthesized.
@@ -167,28 +187,28 @@ Unit <uart_rx> synthesized.
 Synthesizing Unit <uart_tx>.
     Related source file is "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\uart_tx.v".
     Found 1-bit register for signal <rs232_tx>.
-    Found 13-bit register for signal <baud_cnt>.
+    Found 16-bit register for signal <baud_cnt>.
     Found 4-bit register for signal <bit_cnt>.
     Found 8-bit register for signal <tx_data_r>.
     Found 1-bit register for signal <tx_flag>.
     Found 1-bit register for signal <bit_flag>.
-    Found 13-bit adder for signal <baud_cnt[12]_GND_3_o_add_5_OUT> created at line 70.
-    Found 4-bit adder for signal <bit_cnt[3]_GND_3_o_add_11_OUT> created at line 90.
-    Found 1-bit 12-to-1 multiplexer for signal <bit_cnt[3]_PWR_3_o_Mux_15_o> created at line 97.
+    Found 16-bit adder for signal <baud_cnt[15]_GND_7_o_add_5_OUT> created at line 72.
+    Found 4-bit adder for signal <bit_cnt[3]_GND_7_o_add_11_OUT> created at line 92.
+    Found 1-bit 12-to-1 multiplexer for signal <bit_cnt[3]_PWR_7_o_Mux_15_o> created at line 99.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  28 D-type flip-flop(s).
+	inferred  31 D-type flip-flop(s).
 	inferred   5 Multiplexer(s).
 Unit <uart_tx> synthesized.
 
 Synthesizing Unit <timer_1s>.
     Related source file is "D:\fengtao\Project\Git\FPGA_Uart\uart2\src\timer_1s.v".
-    Found 26-bit register for signal <num>.
-    Found 26-bit adder for signal <num[25]_GND_5_o_add_1_OUT> created at line 36.
-    Found 26-bit comparator lessequal for signal <n0004> created at line 39
+    Found 32-bit register for signal <num>.
+    Found 32-bit adder for signal <num[31]_GND_9_o_add_1_OUT> created at line 39.
+    Found 32-bit comparator lessequal for signal <n0004> created at line 42
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  26 D-type flip-flop(s).
+	inferred  32 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <timer_1s> synthesized.
@@ -198,26 +218,23 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 5
- 13-bit adder                                          : 1
- 14-bit adder                                          : 1
- 26-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 32-bit adder                                          : 1
  4-bit adder                                           : 2
 # Registers                                            : 16
  1-bit register                                        : 9
- 13-bit register                                       : 1
- 14-bit register                                       : 1
- 26-bit register                                       : 1
+ 16-bit register                                       : 2
+ 32-bit register                                       : 1
  4-bit register                                        : 2
  8-bit register                                        : 2
 # Comparators                                          : 2
- 26-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
  4-bit comparator lessequal                            : 1
 # Multiplexers                                         : 9
  1-bit 12-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 1
- 13-bit 2-to-1 multiplexer                             : 2
- 14-bit 2-to-1 multiplexer                             : 2
- 26-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 1
  4-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
@@ -244,21 +261,19 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 13-bit adder                                          : 1
- 14-bit adder                                          : 1
+ 16-bit adder                                          : 2
 # Counters                                             : 3
- 26-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 2
-# Registers                                            : 52
- Flip-Flops                                            : 52
+# Registers                                            : 57
+ Flip-Flops                                            : 57
 # Comparators                                          : 2
- 26-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
  4-bit comparator lessequal                            : 1
 # Multiplexers                                         : 6
  1-bit 12-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 1
- 13-bit 2-to-1 multiplexer                             : 2
- 14-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 4
 
 =========================================================================
 
@@ -271,6 +286,17 @@ Optimizing unit <top> ...
 Optimizing unit <uart_rx> ...
 
 Optimizing unit <uart_tx> ...
+WARNING:Xst:1710 - FF/Latch <timer_1s_inst/num_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <timer_1s_inst/num_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <timer_1s_inst/num_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <timer_1s_inst/num_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <inst_uart_tx/baud_cnt_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -312,16 +338,16 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 252
+# BELS                             : 264
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 50
-#      LUT2                        : 31
-#      LUT3                        : 17
-#      LUT4                        : 5
-#      LUT5                        : 9
-#      LUT6                        : 31
-#      MUXCY                       : 50
+#      LUT2                        : 6
+#      LUT3                        : 30
+#      LUT4                        : 4
+#      LUT5                        : 14
+#      LUT6                        : 44
+#      MUXCY                       : 57
 #      VCC                         : 1
 #      XORCY                       : 53
 # FlipFlops/Latches                : 85
@@ -332,11 +358,14 @@ Primitive and Black Box Usage:
 #      FDP                         : 1
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 5
 #      IBUF                        : 2
+#      IBUFG                       : 1
 #      OBUF                        : 2
+# DCMs                             : 1
+#      DCM_SP                      : 1
 
 Device utilization summary:
 ---------------------------
@@ -346,24 +375,24 @@ Selected Device : 6slx9ftg256-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:              85  out of  11440     0%  
- Number of Slice LUTs:                  148  out of   5720     2%  
-    Number used as Logic:               147  out of   5720     2%  
+ Number of Slice LUTs:                  153  out of   5720     2%  
+    Number used as Logic:               152  out of   5720     2%  
     Number used as Memory:                1  out of   1440     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    162
-   Number with an unused Flip Flop:      77  out of    162    47%  
-   Number with an unused LUT:            14  out of    162     8%  
-   Number of fully used LUT-FF pairs:    71  out of    162    43%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    170
+   Number with an unused Flip Flop:      85  out of    170    50%  
+   Number with an unused LUT:            17  out of    170    10%  
+   Number of fully used LUT-FF pairs:    68  out of    170    40%  
+   Number of unique control sets:         8
 
 IO Utilization: 
  Number of IOs:                           5
  Number of bonded IOBs:                   5  out of    186     2%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -386,7 +415,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-sclk                               | BUFGP                  | 86    |
+sclk                               | DCM_SP:CLKFX           | 28    |
+sclk                               | DCM_SP:CLK0            | 58    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -397,9 +427,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.619ns (Maximum Frequency: 216.497MHz)
+   Minimum period: 15.804ns (Maximum Frequency: 63.275MHz)
    Minimum input arrival time before clock: 4.799ns
-   Maximum output required time after clock: 7.992ns
+   Maximum output required time after clock: 6.186ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -408,27 +438,26 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sclk'
-  Clock period: 4.619ns (frequency: 216.497MHz)
-  Total number of paths / destination ports: 1812 / 109
+  Clock period: 15.804ns (frequency: 63.275MHz)
+  Total number of paths / destination ports: 1926 / 109
 -------------------------------------------------------------------------
-Delay:               4.619ns (Levels of Logic = 3)
-  Source:            _i000001/num_12 (FF)
-  Destination:       _i000001/num_0 (FF)
-  Source Clock:      sclk rising
-  Destination Clock: sclk rising
+Delay:               3.951ns (Levels of Logic = 2)
+  Source:            timer_1s_inst/num_3 (FF)
+  Destination:       timer_1s_inst/num_25 (FF)
+  Source Clock:      sclk rising 4.0X
+  Destination Clock: sclk rising 4.0X
 
-  Data Path: _i000001/num_12 to _i000001/num_0
+  Data Path: timer_1s_inst/num_3 to timer_1s_inst/num_25
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.525   0.954  _i000001/num_12 (_i000001/num_12)
-     LUT3:I0->O            3   0.235   1.196  _i000001/GND_5_o_GND_5_o_equal_1_o<25>21 (_i000001/GND_5_o_GND_5_o_equal_1_o<25>2)
-     LUT6:I1->O           14   0.254   1.127  _i000001/GND_5_o_GND_5_o_equal_1_o<25>4 (_i000001/GND_5_o_GND_5_o_equal_1_o)
-     LUT2:I1->O            1   0.254   0.000  _i000001/Mcount_num_eqn_01 (_i000001/Mcount_num_eqn_0)
-     FDC:D                     0.074          _i000001/num_0
+     FDC:C->Q              4   0.525   1.259  timer_1s_inst/num_3 (timer_1s_inst/num_3)
+     LUT6:I0->O           15   0.254   1.585  timer_1s_inst/num[31]_GND_9_o_equal_1_o<31>3 (timer_1s_inst/num[31]_GND_9_o_equal_1_o<31>2)
+     LUT6:I1->O            1   0.254   0.000  timer_1s_inst/Mcount_num_eqn_271 (timer_1s_inst/Mcount_num_eqn_27)
+     FDC:D                     0.074          timer_1s_inst/num_27
     ----------------------------------------
-    Total                      4.619ns (1.342ns logic, 3.277ns route)
-                                       (29.1% logic, 70.9% route)
+    Total                      3.951ns (1.107ns logic, 2.844ns route)
+                                       (28.0% logic, 72.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sclk'
@@ -436,41 +465,45 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'sclk'
 -------------------------------------------------------------------------
 Offset:              4.799ns (Levels of Logic = 2)
   Source:            s_rst_n (PAD)
-  Destination:       _i000001/num_0 (FF)
-  Destination Clock: sclk rising
+  Destination:       timer_1s_inst/num_0 (FF)
+  Destination Clock: sclk rising 4.0X
 
-  Data Path: s_rst_n to _i000001/num_0
+  Data Path: s_rst_n to timer_1s_inst/num_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.681  s_rst_n_IBUF (s_rst_n_IBUF)
      INV:I->O             83   0.255   2.076  s_rst_n_inv1_INV_0 (inst_uart_rx/s_rst_n_inv)
-     FDC:CLR                   0.459          inst_uart_rx/bit_flag
+     FDC:CLR                   0.459          timer_1s_inst/num_0
     ----------------------------------------
     Total                      4.799ns (2.042ns logic, 2.757ns route)
                                        (42.5% logic, 57.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk'
-  Total number of paths / destination ports: 21 / 2
+  Total number of paths / destination ports: 42 / 2
 -------------------------------------------------------------------------
-Offset:              7.992ns (Levels of Logic = 4)
-  Source:            _i000001/num_8 (FF)
+Offset:              6.186ns (Levels of Logic = 8)
+  Source:            timer_1s_inst/num_8 (FF)
   Destination:       led0 (PAD)
-  Source Clock:      sclk rising
+  Source Clock:      sclk rising 4.0X
 
-  Data Path: _i000001/num_8 to led0
+  Data Path: timer_1s_inst/num_8 to led0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              3   0.525   1.196  _i000001/num_8 (_i000001/num_8)
-     LUT5:I0->O            1   0.254   0.958  led031 (led03)
-     LUT6:I2->O            1   0.254   0.958  led032 (led031)
-     LUT6:I2->O            1   0.254   0.681  led033 (led0_OBUF)
+     FDC:C->Q              5   0.525   1.271  timer_1s_inst/num_8 (timer_1s_inst/num_8)
+     LUT5:I0->O            1   0.254   0.000  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_lut<1> (timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<1> (timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<2> (timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<3> (timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<4> (timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<5> (timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.681  timer_1s_inst/Mcompar_GND_9_o_num[31]_LessThan_5_o_cy<6> (led0_OBUF)
      OBUF:I->O                 2.912          led0_OBUF (led0)
     ----------------------------------------
-    Total                      7.992ns (4.199ns logic, 3.793ns route)
-                                       (52.5% logic, 47.5% route)
+    Total                      6.186ns (4.234ns logic, 1.952ns route)
+                                       (68.4% logic, 31.6% route)
 
 =========================================================================
 
@@ -482,20 +515,20 @@ Clock to Setup on destination clock sclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sclk           |    4.619|         |         |         |
+sclk           |    5.831|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.97 secs
+Total CPU time to Xst completion: 3.89 secs
  
 --> 
 
-Total memory usage is 4509484 kilobytes
+Total memory usage is 4509488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

@@ -30,11 +30,24 @@ module top(
 );
 
 
-
+wire clk_50M;
+wire clk_200M;
+wire pll_locked;
 wire [ 7:0] rx_data;
+
+//实例化：锁相环IP
+pll_ip	pll_ip_inst(
+	.RESET(~s_rst_n),
+	.CLK_IN1(sclk),
+	.CLK_OUT1(clk_50M),
+	.CLK_OUT2(clk_200M),
+	.LOCKED(pll_locked)
+);
+
+//实例化：串口接收模块
 uart_rx		inst_uart_rx(
 	//system signal 
-	.sclk(sclk),
+	.sclk(clk_50M),
  	.s_rst_n(s_rst_n),
 	//uart_interface
  	.rs232_rx(rs232_rx),
@@ -43,10 +56,10 @@ uart_rx		inst_uart_rx(
 	.po_flag(po_flag)
 );
 
-
+//实例化：串口发送模块
 uart_tx		inst_uart_tx(
 	//system signals
-	.sclk(sclk),
+	.sclk(clk_50M),
 	.s_rst_n(s_rst_n),
 	//Uart interface
 	.rs232_tx(rs232_tx),
@@ -55,11 +68,11 @@ uart_tx		inst_uart_tx(
 	.tx_data(rx_data)
 );
 
-
-timer_1s(
+//实例化：
+timer_1s	timer_1s_inst(
 	//system signals
 	.s_rst_n(s_rst_n),
-	.sclk(sclk),
+	.sclk(clk_200M),
 	//output signal
 	.io_pin(led0)
 );

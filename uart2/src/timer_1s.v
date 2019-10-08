@@ -26,16 +26,19 @@ module timer_1s(
 	output io_pin
 );
 
-	reg [25:0] num;
+	localparam NUM_END = 'd200_000_000 - 'd1;	//sclk=50M
+	localparam NUM_MD = NUM_END / 2;
+	
+	reg [31:0] num;
 	always @(posedge sclk or negedge s_rst_n) begin
 		if(~s_rst_n)
 			num <= 'd0;
-		else if(num == 'd50_000_000)
+		else if(num == NUM_END)
 			num <= 'd0;
 		else
 			num <= num + 'd1;
 	end
 	
-	assign io_pin = (num >= 'd25_000_000) ?  'b1 : 'b0;
+	assign io_pin = (num >= NUM_MD) ?  'b1 : 'b0;
 
 endmodule

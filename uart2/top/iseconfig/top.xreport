@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-07-09T18:08:25</DateModified>
+  <DateModified>2019-10-08T15:49:29</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2019-07-09T16:12:05</SummaryTimeStamp>
+  <SummaryTimeStamp>2019-10-08T15:42:56</SummaryTimeStamp>
   <SavedFilePath>D:/fengtao/Project/Git/FPGA_Uart/uart2/top/iseconfig/top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/fengtao/Project/Git/FPGA_Uart/uart2/top\</ImplementationReportsDirectory>
   <DateInitialized>2019-07-09T16:12:05</DateInitialized>

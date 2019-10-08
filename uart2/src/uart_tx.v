@@ -31,7 +31,9 @@ module uart_tx(
 );
 
 `ifndef SIM
-localparam BAUD_END = 5207;
+//localparam BAUD_END = 20833 - 1;		//clk200M baud 9600
+//localparam BAUD_END = 5208 - 1;		//clk50M baud 9600
+localparam BAUD_END = 434 - 1;			//clk50M baud 115200
 `else
 localparam BAUD_END = 56;
 `endif
@@ -40,7 +42,7 @@ localparam BIT_END = 8;
 
 reg [ 7:0] 	tx_data_r;
 reg 		tx_flag;
-reg [12:0]	baud_cnt;
+reg [15:0]	baud_cnt;
 reg 		bit_flag;
 reg [ 3:0]	bit_cnt;
 

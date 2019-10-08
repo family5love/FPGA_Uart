@@ -12,7 +12,9 @@ module uart_rx(
 );
 //===============================================================parameter
 `ifndef SIM
-localparam BAUD_END = 5207;
+//localparam BAUD_END = 20833 - 1;		//clk200M baud 9600
+//localparam BAUD_END = 5208 - 1;		//clk50M baud 9600
+localparam BAUD_END = 434 - 1;			//clk50M baud 115200
 `else
 localparam BAUD_END = 56;
 `endif
@@ -22,7 +24,7 @@ reg         rx_r1;
 reg         rx_r2;
 reg         rx_r3;
 reg         rx_flag;
-reg [13:0]  baud_cnt;
+reg [15:0]  baud_cnt;
 reg         bit_flag;
 reg [ 3:0]  bit_cnt;
 

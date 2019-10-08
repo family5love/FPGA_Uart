@@ -1,3 +1,4 @@
+verilog work "ipcore_dir/pll_ip.v"
 verilog work "../src/uart_tx.v"
 verilog work "../src/uart_rx.v"
 verilog work "../src/timer_1s.v"
